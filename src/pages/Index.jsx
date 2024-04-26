@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Box, Button, Input, List, ListItem, ListIcon, IconButton, useToast } from '@chakra-ui/react';
+import { Box, Button, Input, List, ListItem, ListIcon, IconButton, useToast, Text } from '@chakra-ui/react';
 import { FaPlus, FaTrash, FaCheckCircle, FaRegCircle } from 'react-icons/fa';
 
 const Index = () => {
@@ -62,7 +62,10 @@ const Index = () => {
           </ListItem>
         ))}
       </List>
+    <Box as="footer" p={4} bg="gray.100" textAlign="center">
+      <Text fontSize="sm">&copy; {new Date().getFullYear()} Todo App. All rights reserved.</Text>
     </Box>
+  </Box>
   );
 };
 
