@@ -38,7 +38,7 @@ const Index = () => {
           onChange={(e) => setInput(e.target.value)}
           size="lg"
         />
-        <Button leftIcon={<FaPlus />} colorScheme="blue" onClick={addTask} ml={2}>
+        <Button leftIcon={<FaPlus />} colorScheme="green" onClick={addTask} ml={2}>
           Add Task
         </Button>
       </Box>
